@@ -16,6 +16,9 @@ youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.c
 
 [MITM]
 hostname = %APPEND% -redirector*.googlevideo.com,*.googlevideo.com,www.youtube.com,s.youtube.com,youtubei.googleapis.com
+#!name=SoundCloudGo+
+
+#!desc=SoundCloudGo+
 
 [Script]
 
@@ -24,7 +27,6 @@ SoundCloudGo+=type=http-response,pattern=https://api-mobile.soundcloud.com/confi
 [MITM]
 
 hostname= %APPEND% api-mobile.soundcloud.com
-
 
 
 
